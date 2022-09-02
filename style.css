@@ -1,0 +1,27 @@
+.wrapper {
+    display: grid;
+    grid-template: repeat(8, 1fr) / repeat(4, 2fr);
+    height: 130vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+header {
+    display: grid;
+    grid-template: 1 fr / 20% 60% 20%;
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+    color: #274C5B;
+}
+section {
+    grid-row: 2 / 7;
+    grid-column: span 4;
+    background-image: url("./images/main-img.png");
+}
+footer {
+    display: grid;
+    grid-template: repeat(2, 50%) / repeat(4, 25%)
+}
+.copyright {
+    grid-row: -1 / -2;
+    grid-columns: 1 / 5;
+}
